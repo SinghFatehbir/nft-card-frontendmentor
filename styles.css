@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    height: 100%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* nft card container*/
+.nftcard{
+    background-color: hsl(216, 50%, 16%);
+    max-width: 300px;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-top: 7rem;
+}
+
+/*Images container*/
+.images-container{
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    height: auto;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nftimage{
+    width: 100%;
+    z-index: 1;
+}
+
+.hoverimage{
+    position: absolute;
+    max-width: 100%;
+    padding: 126px;
+    border-radius: 5px;
+}
+
+.images-container:hover > .hoverimage{
+    background-color: hsla(178, 100%, 50%, 0.5);
+    transition: background-color ease-in 0.5s;
+    z-index: 1000;
+}
+
+/* NFT card info */
+.info h1 a{
+    text-decoration: none;
+    color:hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+
+.info h1 a:hover{
+    color:hsl(178, 100%, 50%);
+    transition: color ease-in 0.5s;
+}
+
+.info p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+/* price and time */
+.pricetime-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price, .time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    gap: 8px;
+}
+
+.price{
+    color: hsl(178, 100%, 50%);
+}
+
+.price p{
+    font-weight: 400;
+}
+
+.price img{
+    padding-top: 4px;
+}
+
+.time p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.time img{
+    padding-top: 4px;
+}
+
+/* horizontal line */
+hr{
+    border: 1px solid hsla(215, 32%, 27%, 0.5);
+}
+
+/* Creator */
+.creator{
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+}
+
+.creator img{
+    max-height: 2rem;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.creator p a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.creator p a:hover{
+    color: hsl(178, 100%, 50%);
+    transition: color ease-in 0.5s;
+}
+
+.creator p{
+    color: hsl(215, 51%, 70%);
+}
